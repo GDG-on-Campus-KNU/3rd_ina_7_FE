@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:background="@color/lightGray">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+        android:text="닉네임"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp">
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@drawable/white_square_background"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:hint="닉네임" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gray_square_background"
+            android:stateListAnimator="@null"
+            android:textSize="16sp"
+            android:text="중복확인"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/red"
+        android:text="닉네임을 입력해주세요."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:textStyle="bold"
+            android:text="생년월일"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/darkGray"
+            android:text="(선택)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/white_square_background"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:hint="년(4자)" />
+
+        <Spinner
+            style="@style/Widget.My.Spinner"
+            list="@{output.categoryList}"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/white_square_background"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:hint="일" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:textColor="@color/darkGray"
+        android:text="입력한 정보를 바탕으로 맞춤 자격증을 추천해드려요!"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_square_background"
+        android:stateListAnimator="@null"
+        android:layout_marginVertical="20dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="완료하기"/>
+
+</LinearLayout>
