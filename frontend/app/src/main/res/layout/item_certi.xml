@@ -39,7 +39,7 @@
             android:layout_height="24dp"
             android:src="@drawable/bookmark_off_icon"
             android:background="@android:color/transparent"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toStartOf="@id/like_btn"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
