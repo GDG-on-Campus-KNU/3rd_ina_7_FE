@@ -3,27 +3,24 @@ package com.example.jagyeogina
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.commit
-import com.example.jagyeogina.databinding.ActivityLoginBinding
-import com.google.android.material.internal.ViewUtils.hideKeyboard
+import com.example.jagyeogina.databinding.ActivityPreinputBinding
 
-class LoginActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityLoginBinding
+class PreinputActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityPreinputBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityPreinputBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
-                add(R.id.fragment_container_view, LoginFragment())
+                add(R.id.fragment_container_view, PreinputFragment1())
             }
         }
 

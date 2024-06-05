@@ -1,4 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,36 +18,40 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="4dp">
         <EditText
-            android:id="@+id/editTextId"
+            android:id="@+id/edittext_nickname"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="10"
-            android:background="@drawable/white_square_background"
+            android:background="@drawable/bg_edittext"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
             android:layout_gravity="center"
             android:textSize="16sp"
+            android:maxLength="10"
             android:hint="닉네임" />
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1" />
         <android.widget.Button
+            android:id="@+id/button_nickname_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/gray_square_background"
+            android:background="@drawable/gray_square"
             android:stateListAnimator="@null"
             android:textSize="16sp"
             android:text="중복확인"/>
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textview_error_nickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
+        android:visibility="invisible"
         android:textColor="@color/red"
         android:text="닉네임을 입력해주세요."/>
 
@@ -74,43 +80,68 @@
         android:layout_marginVertical="4dp"
         android:orientation="horizontal">
         <EditText
-            android:id="@+id/editTextYear"
+            android:id="@+id/edittext_year"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:background="@drawable/white_square_background"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
             android:layout_gravity="center"
             android:textSize="16sp"
             android:inputType="number"
+            android:maxLength="4"
+            android:digits="0123456789"
             android:hint="년(4자)" />
 
-        <Spinner
-            style="@style/Widget.My.Spinner"
-            list="@{output.categoryList}"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:paddingHorizontal="15dp"
-            android:paddingVertical="10dp"
+            android:layout_weight="1"
             android:layout_marginHorizontal="10dp"
-            android:layout_gravity="center" />
+            app:hintEnabled="false"
+            android:paddingVertical="0dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="10dp"
+                android:textSize="16sp"
+                android:paddingHorizontal="15dp"
+                android:inputType="none"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittext"
+                android:hint="월" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/edittext_date"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:background="@drawable/white_square_background"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
             android:layout_gravity="center"
             android:textSize="16sp"
             android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="2"
             android:hint="일" />
     </LinearLayout>
 
+
+    <TextView
+        android:id="@+id/textview_error_birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
+        android:textColor="@color/red"
+        android:text="생년월일을 형식에 맞게 입력해주세요."/>
 
     <TextView
         android:layout_width="match_parent"
@@ -125,9 +156,11 @@
         android:layout_weight="1" />
 
     <android.widget.Button
+        android:id="@+id/button_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/gray_square_background"
+        android:background="@drawable/bg_button_indigo"
+        android:enabled="false"
         android:stateListAnimator="@null"
         android:layout_marginVertical="20dp"
         android:textColor="@color/white"

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="50dp"
+    android:orientation="vertical"
+    android:background="@color/lightGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@color/indigo"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="2"
+            android:background="@color/gray"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:text="요즘 관심 있는 주제를\n선택해주세요!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="관광"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="교육"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="마케팅"
+            style="@style/CustomTag"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="사회조사"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="경영"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="컴퓨터"
+            style="@style/CustomTag"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="상담"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="소방"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="운전면허"
+            style="@style/CustomTag"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="바리스타"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="조리"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="간호"
+            style="@style/CustomTag"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="환경"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="사회복지"
+            style="@style/CustomTag"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="산업안전"
+            style="@style/CustomTag"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/darkGray"
+        android:text="관심분야는 나중에 다시 수정할 수 있어요!"/>
+
+    <android.widget.Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_button_indigo"
+        android:stateListAnimator="@null"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="다음으로"/>
+
+</LinearLayout>

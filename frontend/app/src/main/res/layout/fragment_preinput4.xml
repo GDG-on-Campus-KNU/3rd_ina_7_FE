@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="50dp"
+    android:orientation="vertical"
+    android:background="@color/lightGray">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/indigo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:text="전공을 알려주세요!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="학력 정보"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinner_education"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        app:hintEnabled="false"
+        android:paddingVertical="0dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/textview_education"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="10dp"
+            android:textSize="16sp"
+            android:paddingHorizontal="15dp"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_edittext"
+            android:hint="최종 학력" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinner_enrollment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        app:hintEnabled="false"
+        android:paddingVertical="0dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/textview_enrollment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="10dp"
+            android:textSize="16sp"
+            android:paddingHorizontal="15dp"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_edittext"
+            android:hint="재학 여부" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinner_grade"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        app:hintEnabled="false"
+        android:paddingVertical="0dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/textview_grade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="10dp"
+            android:textSize="16sp"
+            android:paddingHorizontal="15dp"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_edittext"
+            android:hint="학년" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinner_year"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        app:hintEnabled="false"
+        android:paddingVertical="0dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/textview_year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="10dp"
+            android:textSize="16sp"
+            android:paddingHorizontal="15dp"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_edittext"
+            android:hint="졸업년도" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="전공"/>
+
+    <EditText
+        android:id="@+id/edittext_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"
+        android:paddingVertical="10dp"
+        android:textSize="16sp"
+        android:paddingHorizontal="15dp"
+        android:hint="학부/학과"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/darkGray"
+        android:text="학력정보는 나중에 다시 수정할 수 있어요!"/>
+
+    <android.widget.Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_button_indigo"
+        android:stateListAnimator="@null"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="완료하기"/>
+</LinearLayout>

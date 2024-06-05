@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="CustomTag" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/bg_tag</item>
+        <item name="android:textColor">@drawable/tag_text_color</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">20dp</item>
+        <item name="android:layout_marginRight" tools:targetApi="o">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

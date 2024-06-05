@@ -16,36 +16,40 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="4dp">
         <EditText
-            android:id="@+id/editTextId"
+            android:id="@+id/edittext_id"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="10"
-            android:background="@drawable/white_square_background"
+            android:background="@drawable/bg_edittext"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
             android:layout_gravity="center"
             android:textSize="16sp"
+            android:inputType="text"
             android:hint="아이디" />
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1" />
         <android.widget.Button
+            android:id="@+id/button_id_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/gray_square_background"
+            android:background="@drawable/gray_square"
             android:stateListAnimator="@null"
             android:textSize="16sp"
             android:text="중복확인"/>
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textview_error_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="4dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
         android:textColor="@color/red"
         android:text="아이디를 입력해주세요."/>
 
@@ -56,31 +60,35 @@
         android:textStyle="bold"
         android:text="비밀번호"/>
     <EditText
-        android:id="@+id/editTextPw"
+        android:id="@+id/edittext_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/white_square_background"
+        android:background="@drawable/bg_edittext"
         android:paddingHorizontal="15dp"
         android:paddingVertical="10dp"
         android:layout_marginVertical="4dp"
         android:layout_gravity="center"
+        android:inputType="textPassword"
         android:textSize="16sp"
         android:hint="비밀번호" />
     <EditText
-        android:id="@+id/editTextPwCheck"
+        android:id="@+id/edittext_pw_check"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/white_square_background"
+        android:background="@drawable/bg_edittext"
         android:paddingHorizontal="15dp"
         android:paddingVertical="10dp"
         android:layout_marginVertical="4dp"
         android:layout_gravity="center"
+        android:inputType="textPassword"
         android:textSize="16sp"
         android:hint="비밀번호 확인" />
     <TextView
+        android:id="@+id/textview_error_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="4dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
         android:textColor="@color/red"
         android:text="비밀번호를 입력해주세요."/>
 
@@ -95,35 +103,39 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="4dp">
         <EditText
-            android:id="@+id/editTextUsername"
+            android:id="@+id/edittext_email"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="13"
-            android:background="@drawable/white_square_background"
+            android:background="@drawable/bg_edittext"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
             android:layout_gravity="center"
             android:textSize="16sp"
+            android:inputType="textEmailAddress"
             android:hint="jagyeokinna@example.com" />
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1" />
         <android.widget.Button
+            android:id="@+id/button_email_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/gray_square_background"
+            android:background="@drawable/gray_square"
             android:stateListAnimator="@null"
             android:textSize="16sp"
             android:text="인증"/>
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textview_error_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="4dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="invisible"
         android:textColor="@color/red"
         android:text="이메일을 입력해주세요."/>
 
@@ -133,9 +145,11 @@
         android:layout_weight="1" />
 
     <android.widget.Button
+        android:id="@+id/button_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/gray_square_background"
+        android:background="@drawable/bg_button_indigo"
+        android:enabled="false"
         android:stateListAnimator="@null"
         android:layout_marginVertical="20dp"
         android:textColor="@color/white"
