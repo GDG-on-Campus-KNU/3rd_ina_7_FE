@@ -1,7 +1,5 @@
 package com.example.jagyeongina.ui.adapter
 
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -14,7 +12,7 @@ import com.example.jagyeongina.databinding.ItemCertiBinding
 import com.example.jagyeongina.model.Certificate
 
 class CertificatesAdapter : ListAdapter<Certificate, CertificatesAdapter.BoardsViewHolder>(
-    BoardAllDiffCallback()
+    CertificateAllDiffCallback()
 ) {
     private lateinit var binding: ItemCertiBinding
 
@@ -61,7 +59,7 @@ class CertificatesAdapter : ListAdapter<Certificate, CertificatesAdapter.BoardsV
     lateinit var detailCertificateListener: DetailCertificateListener
 }
 
-class BoardAllDiffCallback : DiffUtil.ItemCallback<Certificate>() {
+class CertificateAllDiffCallback : DiffUtil.ItemCallback<Certificate>() {
     override fun areItemsTheSame(oldItem: Certificate, newItem: Certificate): Boolean {
         return oldItem.certificateId == newItem.certificateId
     }

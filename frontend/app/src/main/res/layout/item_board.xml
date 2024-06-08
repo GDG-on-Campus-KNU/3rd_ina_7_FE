@@ -150,12 +150,12 @@
             android:src="@drawable/chat_icon"
             android:background="@android:color/transparent"
             android:layout_marginEnd="4dp"
-            app:layout_constraintEnd_toStartOf="@id/chat_num"
+            app:layout_constraintEnd_toStartOf="@id/comment_num"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
-            android:id="@+id/chat_num"
+            android:id="@+id/comment_num"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="0"
