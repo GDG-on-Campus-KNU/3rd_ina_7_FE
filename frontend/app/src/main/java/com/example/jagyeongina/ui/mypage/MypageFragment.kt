@@ -1,5 +1,6 @@
 package com.example.jagyeongina.ui.mypage
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -27,7 +28,13 @@ class MypageFragment : Fragment() {
 
     private fun setUi() {
         binding.apply {
-
+            // 사용자 프로필 수정
+            profileBox.setOnClickListener {
+                startActivity(Intent(binding.root.context,ProfileModifyActivity::class.java))
+            }
+            profileBtn.setOnClickListener {
+                startActivity(Intent(binding.root.context,ProfileModifyActivity::class.java))
+            }
         }
     }
 }
