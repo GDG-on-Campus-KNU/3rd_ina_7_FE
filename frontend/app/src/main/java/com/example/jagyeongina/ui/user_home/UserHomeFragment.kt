@@ -1,11 +1,14 @@
 package com.example.jagyeongina.ui.user_home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.jagyeogina.ui.CertiDetailActivity
+import com.example.jagyeongina.ApplicationClass
 import com.example.jagyeongina.databinding.FragmentUserHomeBinding
 import com.example.jagyeongina.model.Certificate
 import com.example.jagyeongina.ui.adapter.CertificatesAdapter
@@ -55,7 +58,9 @@ class UserHomeFragment : Fragment() {
             object : CertificatesAdapter.DetailCertificateListener {
                 override fun onClick(certificate: Certificate) {
                     // 자격증 자세히 보기로 이동
-
+                    val intent = Intent(this@UserHomeFragment.context, CertiDetailActivity::class.java)
+                    intent.putExtra(ApplicationClass.CERTI_ITEM, certificate)
+                    startActivity(intent)
                 }
             }
         // RecyclerView 설정
@@ -75,7 +80,9 @@ class UserHomeFragment : Fragment() {
             object : CertificatesAdapter.DetailCertificateListener {
                 override fun onClick(certificate: Certificate) {
                     // 자격증 자세히 보기로 이동
-
+                    val intent = Intent(this@UserHomeFragment.context, CertiDetailActivity::class.java)
+                    intent.putExtra(ApplicationClass.CERTI_ITEM, certificate)
+                    startActivity(intent)
                 }
             }
         // RecyclerView 설정
@@ -95,7 +102,9 @@ class UserHomeFragment : Fragment() {
             object : CertificatesAdapter.DetailCertificateListener {
                 override fun onClick(certificate: Certificate) {
                     // 자격증 자세히 보기로 이동
-
+                    val intent = Intent(this@UserHomeFragment.context, CertiDetailActivity::class.java)
+                    intent.putExtra(ApplicationClass.CERTI_ITEM, certificate)
+                    startActivity(intent)
                 }
             }
         // RecyclerView 설정
