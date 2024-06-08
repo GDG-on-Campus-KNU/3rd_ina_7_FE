@@ -1,12 +1,11 @@
-package com.example.jagyeogina.ui.calendar
+package com.example.jagyeongina.ui.calendar
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.jagyeogina.databinding.FragmentCalendarBinding
-import com.example.jagyeogina.databinding.FragmentGuestHomeBinding
+import com.example.jagyeongina.databinding.FragmentCalendarBinding
 
 class CalendarFragment : Fragment() {
     lateinit var binding: FragmentCalendarBinding

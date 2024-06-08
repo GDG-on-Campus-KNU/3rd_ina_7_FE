@@ -1,17 +1,16 @@
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    alias(libs.plugins.com.android.application)
-    alias(libs.plugins.org.jetbrains.kotlin.android)
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.example.jagyeogina"
-    compileSdk = 33
+    namespace = "com.example.jagyeongina"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.jagyeogina"
+        applicationId = "com.example.jagyeongina"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -41,11 +40,29 @@ android {
 
 dependencies {
 
-    implementation(libs.core.ktx)
-    implementation(libs.appcompat)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.constraintlayout)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.test.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+
+    // Retrofit2 Dependency
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    // OkHttp3 Dependency
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+
+    // ViewModel Dependency
+    implementation(libs.lifecycle.viewmodel.ktx)
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation(libs.lifecycle.runtime.ktx)
+
+    // Fremework KTX Dependency
+    implementation(libs.fragment.ktx)
+    implementation(libs.activity.ktx)
 }

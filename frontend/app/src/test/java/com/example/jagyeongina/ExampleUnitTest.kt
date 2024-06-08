@@ -1,4 +1,4 @@
-package com.example.jagyeogina
+package com.example.jagyeongina
 
 import org.junit.Test
 

@@ -1,21 +1,21 @@
-package com.example.jagyeogina.ui.guset_home
+package com.example.jagyeongina.ui.mypage
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.jagyeogina.databinding.FragmentGuestHomeBinding
+import com.example.jagyeongina.databinding.FragmentMypageBinding
 
-class GuestHomeFragment : Fragment() {
-    lateinit var binding: FragmentGuestHomeBinding
+class MypageFragment : Fragment() {
+    lateinit var binding: FragmentMypageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentGuestHomeBinding.inflate(inflater, container, false)
+        binding = FragmentMypageBinding.inflate(inflater, container, false)
         return binding.root
     }
 
