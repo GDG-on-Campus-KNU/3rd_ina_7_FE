@@ -1,12 +1,11 @@
-package com.example.jagyeogina.ui.user_home
+package com.example.jagyeongina.ui.user_home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.jagyeogina.databinding.FragmentGuestHomeBinding
-import com.example.jagyeogina.databinding.FragmentUserHomeBinding
+import com.example.jagyeongina.databinding.FragmentUserHomeBinding
 
 class UserHomeFragment : Fragment() {
     lateinit var binding: FragmentUserHomeBinding

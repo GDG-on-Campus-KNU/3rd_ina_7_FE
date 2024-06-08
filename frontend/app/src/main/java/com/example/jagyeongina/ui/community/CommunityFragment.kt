@@ -1,12 +1,11 @@
-package com.example.jagyeogina.ui.community
+package com.example.jagyeongina.ui.community
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.jagyeogina.databinding.FragmentCommunityBinding
-import com.example.jagyeogina.databinding.FragmentGuestHomeBinding
+import com.example.jagyeongina.databinding.FragmentCommunityBinding
 
 class CommunityFragment : Fragment() {
     lateinit var binding: FragmentCommunityBinding

@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Jagyeogina" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="Base.Theme.Jagyeongina" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Jagyeogina" parent="Base.Theme.Jagyeogina" />
+    <style name="Theme.Jagyeongina" parent="Base.Theme.Jagyeongina" />
 </resources>

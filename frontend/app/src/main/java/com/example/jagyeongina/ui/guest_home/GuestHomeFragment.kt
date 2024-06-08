@@ -1,22 +1,21 @@
-package com.example.jagyeogina.ui.search
+package com.example.jagyeongina.ui.guest_home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.jagyeogina.databinding.FragmentGuestHomeBinding
-import com.example.jagyeogina.databinding.FragmentSearchBinding
+import com.example.jagyeongina.databinding.FragmentGuestHomeBinding
 
-class SearchFragment : Fragment() {
-    lateinit var binding: FragmentSearchBinding
+class GuestHomeFragment : Fragment() {
+    lateinit var binding: FragmentGuestHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSearchBinding.inflate(inflater, container, false)
+        binding = FragmentGuestHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
